@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Notas</title>
+    <link rel="stylesheet" href="/styletarjetas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notas</h1>
+
+        <div id="notas-container"></div>
+
+        <div class="note-form">
+            <input type="text" id="note-title" placeholder="Título de la nota">
+            <textarea id="note-text" placeholder="Texto de la nota"></textarea>
+            <button onclick="guardarnota()">Guardar Nota</button>
+            <button onclick="borrarespacios()">Limpiar Campos</button>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="buscartexto" placeholder="Buscar por texto" oninput="filtros()">
+            <label>
+                <input type="checkbox" id="filtrar" onchange="filtros()"> Mostrar sólo realizadas
+            </label>
+        </div>
+    </div>
+
+    <script src="tarjetas.js"></script>
+</body>
+</html>

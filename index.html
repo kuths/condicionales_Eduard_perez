@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div>
+      <h2>ESTATURA</h2>
+      <h3>en centimetros</h3>
+      <form>
+        <label>
+          <input type="number" name="" id="altura" />
+        </label>
+      </form>
+      <h2>PESO</h2>
+      <h3>en kilogramos</h3>
+      <form>
+        <label>
+          <input type="number" name="" id="peso" />
+        </label>
+      </form>
+      <button type="submit" id="botoncalcular">CALCULAR</button>
+      <h3>resultado</h3>
+      <p id="resultado"></p>
+    </div>
+
+    <div>
+      <div class="container">
+        <h1>Conversor de Pesos a Dólares</h1>
+        <div class="converter">
+            <label for="pesos">Cantidad en Pesos:</label>
+            <input type="number" id="pesos" oninput="convertirPesos()">
+            
+            <label for="dolares">Cantidad en Dólares:</label>
+            <input type="number" id="dolares" oninput="convertirDolares()">
+        </div>
+    </div>
+    </div>
+
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
